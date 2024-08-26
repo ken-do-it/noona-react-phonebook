@@ -1,38 +1,65 @@
-.App {
+/* .text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-left {
+  margin-top: 33px;
+} */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.contact-left {
+  border-left: 1px solid #ddd  ;
+  margin-top: 32px;
+}
+
+.contact-card {
+  margin-top: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+button {
+  border-radius: 50px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+@media (max-width: 768px) {
+  button {
+    width: auto; /* 작은 화면에서는 버튼 크기를 자동으로 조정 */
+    max-width: 100px; /* 최대 너비 설정 */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  
+  .form-control {
+    margin-bottom: 10px; /* 작은 화면에서 필드 간 간격을 더 넓게 설정 */
   }
 }
